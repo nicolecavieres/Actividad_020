@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act_20</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script
+  	src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+ 
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-1">
+				
+				<h2>Valores Actuales</h2>
+		      	<table id="indicadores" class="table table-striped">
+		        <tbody>
+		        	<tr>
+		                <td>Dólar:</td>
+		                <td id="dl"></td>
+		            </tr>
+
+		             <tr>
+		                <td>Euro:</td>
+		                <td id="eu"></td>
+		            </tr>  
+
+		            <tr>
+		                <td>Unidad de fomento (UF):</td>
+		                <td id="uf"></td>
+		            </tr>                
+		              
+		            <tr>
+		                <td>Unidad Tributaria Mensual (UTM):</td>
+		                <td id="utm"></td>
+		            </tr>       
+		        </tbody>
+		        </table>
+
+		        <button type="button" id="boton" class="btn btn-primary">Actualizar</button>
+
+		        <br>
+		        <br>
+		        <br>
+
+			</div>
+
+			<div class="col-md-4 col-md-offset-2  eleccion">
+				
+				<h2>Conversión de unidades</h2>
+				<p>Ingresa el valor en Pesos Chilenos (Sin puntos)</p>
+
+
+				<input type="number" id="valor" class="form-control" value="">
+				<button type="button" id="boton2" class="btn btn-primary">Cambiar</button>
+				<p id="pesos"></p>
+				<p id="dolares"></p>
+				<p id="euros"></p>
+
+				<br>
+				<br>
+				
+				<p>Ingresa el valor en Dolares (Sin puntos)</p>
+
+				<input type="number" id="valor2" class="form-control" value="">
+				<button type="button" id="boton3" class="btn btn-primary">Cambiar</button>
+				<p id="dolares1"></p>
+				<p id="pesos1"></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
